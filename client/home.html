@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+    <link rel="stylesheet" href="style.css">
+    <title>Home - Galaxy Store</title>
+</head>
+
+<body>
+    <div class="carousel">
+
+        <header>
+            <div class="logo">GalaxyStore</div>
+            <nav>
+                <a href="home.html">Home</a>
+                <a id="logoutLink" href="">Logout</a>
+            </nav>
+        </header>
+
+        <div id="productContainer" class="list"></div>
+
+        <template id="productTemplate">
+            <div class="item" id="cardValue">
+                <img class="productImage" src="" alt="">
+                <div class="introduce">
+                    <div class="title"></div>
+                    <div class="topic"></div>
+                    <div class="des"></div>
+                    <button class="seeMore">SEE MORE &#8599</button>
+                </div>
+                <div class="detail">
+                    <div class="title detail-title"></div>
+                    <div class="des detail-desc"></div>
+                    <div class="specifications">
+                        <div>
+                            <p>Processor</p>
+                            <p class="processor"></p>
+                        </div>
+                        <div>
+                            <p>Memory</p>
+                            <p class="memory"></p>
+                        </div>
+                        <div>
+                            <p>Camera</p>
+                            <p class="camera"></p>
+                        </div>
+                        <div>
+                            <p>Display</p>
+                            <p class="display"></p>
+                        </div>
+                        <div>
+                            <p>Storage</p>
+                            <p class="storage"></p>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="price"></p>
+                    </div>
+                    <div class="checkout">
+                        <button class="order">Order Now</button>
+                    </div>
+                </div>
+            </div>
+        </template>
+
+        <div class="arrows">
+            <button id="prev">&#11104</button>
+            <button id="next">&#11106</button>
+            <button id="back">See All &#8599</button>
+        </div>
+    </div>
+
+    <script src="home.js"></script>
+</body>
+
+</html>
