@@ -57,7 +57,7 @@ const orderNow = async (event, _id, name, price, image) => {
     }
 
     try {
-        const response = await fetch("http://localhost:3000/api/order", {
+        const response = await fetch("https://galaxystore.onrender.com/api/order", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
@@ -121,7 +121,7 @@ const showProductContainer = (products) => {
 
 async function fetchProducts() {
     try {
-        const response = await fetch('http://localhost:3000/api/products');
+        const response = await fetch('https://galaxystore.onrender.com/api/products');
         const products = await response.json();
         showProductContainer(products);
     } catch (error) {
