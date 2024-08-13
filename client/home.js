@@ -40,6 +40,10 @@ backButton.onclick = function () {
     carousel.classList.remove('showDetail');
 }
 
+document.querySelector('.logo').addEventListener('click', () => {
+    window.location.href = 'home.html';
+});
+
 document.getElementById('logoutLink').addEventListener('click', function (event) {
     event.preventDefault();
     localStorage.setItem("token", JSON.stringify({}));

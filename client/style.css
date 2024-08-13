@@ -48,6 +48,7 @@ header {
 header .logo {
     font-size: 24px;
     font-weight: bold;
+    cursor: pointer;
 }
 
 header nav a {
