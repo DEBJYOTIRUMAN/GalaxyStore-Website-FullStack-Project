@@ -482,6 +482,10 @@ header nav a:hover {
 }
 
 @media screen and (max-width: 800px) {
+    .carousel {
+        height: 150vh;
+    }
+
     .carousel .list .item {
         font-size: 10px;
     }
@@ -491,21 +495,25 @@ header nav a:hover {
     }
 
     .carousel .list .item:nth-child(2) .introduce {
-        display: none;
+        width: 100%;
+        top: 20%;
     }
 
     .carousel .list .item img {
         width: 100%;
+        top: 60%;
     }
 
     .carousel.showDetail .list .item img {
-        display: none;
-
+        position: absolute;
+        top: 25%;
+        left: 0%;
     }
 
     .carousel.showDetail .list .item:nth-child(2) .detail {
         backdrop-filter: blur(10px);
         width: 100%;
+        top: 65%;
     }
 
     .carousel .list .item:nth-child(2) .introduce .des,
@@ -517,5 +525,15 @@ header nav a:hover {
         display: flex;
         width: max-content;
         float: right;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .carousel.showDetail .list .item img {
+        top: 20%;
+    }
+
+    .carousel.showDetail .list .item:nth-child(2) .detail {
+        top: 55%;
     }
 }
